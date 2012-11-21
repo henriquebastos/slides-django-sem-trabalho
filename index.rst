@@ -22,6 +22,21 @@ Quem?
 * github: https://github.com/felipecruz
 
 
+Quem?
+-----
+
+.. container:: center, huge
+
+    .. image:: assets/loogica_logo.svg
+        :height: 250px
+        :width: 600 px
+
+.. container:: center, huge
+
+    .. image:: assets/dekode_logo.svg
+        :height: 250px
+        :width: 600 px
+
 Motivação
 ---------
 
@@ -64,10 +79,12 @@ Gerador de binding
 Python C Extensions - Prático
 -----------------------------
 
+* http://docs.python.org/3.3/extending/extending.html
+
 * C usando a API C/Pyhton.
 * Exige compilação.
 * Debug mais complexo.
-* Compatível com PyPy através do Cpyext.
+* Compatível com PyPy através do Cpyext (não recomendado).
 
 
 C - Struct de Módulo
@@ -77,14 +94,14 @@ C - Struct de Módulo
 
     static struct PyModuleDef moduledef = {
         PyModuleDef_HEAD_INIT,
-        "pyaio",                             /* m_name      */
-        "Python POSIX aio (aio.h) bindings", /* m_doc       */
-        -1,                                  /* m_size      */
-        PyaioMethods,                        /* m_methods   */
-        NULL,                                /* m_reload    */ 
-        NULL,                                /* m_traverse  */
-        NULL,                                /* m_clear     */
-        NULL,                                /* m_free      */
+        "pyaio",                            /* m_name      */
+        "Python POSIX aio (aio.h) bindings",/* m_doc       */
+        -1,                                 /* m_size      */
+        PyaioMethods,                       /* m_methods   */
+        NULL,                               /* m_reload    */
+        NULL,                               /* m_traverse  */
+        NULL,                               /* m_clear     */
+        NULL,                               /* m_free      */
     };
 
 
@@ -112,12 +129,13 @@ C - Struct de Módulo
 .. sourcecode:: c
 
     PyObject *
-    init_pyaio(void) 
+    init_pyaio(void)
     {
         PyObject *m;
         PyObject *__version__;
 
-        __version__ = PyUnicode_FromFormat("%s", PYAIO_VERSION);
+        __version__ = PyUnicode_FromFormat("%s",
+                                           PYAIO_VERSION);
 
         if (!__version__) {
             return NULL;
@@ -125,16 +143,25 @@ C - Struct de Módulo
 
         ...
 
-C Excentions - Observações
+
+\+ C - Inicialização do módulo
+------------------------------
+
+.. class:: huge, center
+
+    Isso é apenas uns 15% do necessário.
+
+C Extensions - Observações
 --------------------------
 
 * Permite desenvolver módulos inteiros em C, não somente integrar libs em C.
 * Tem muitos detalhes e certa complexidade.
 * Bom desempenho.
-* Pra testar depende de compilar e instalar.
+* Pra testar é necessário compilar e instalar.
+* Exige mais tempo e mais cuidado.
 
-Ctypes - Prático
-----------------
+Ctypes
+------
 
 * Permite apenas chamar código em de bibliotecas escritas em C.
 * Python puro.
@@ -148,25 +175,60 @@ Ctypes
 
     from ctypes import *
     from ctypes.util import find_library
-    
+
+
+Ctypes
+------
+
+.. sourcecode:: python
+
+    from ctypes import *
+    from ctypes.util import find_library
+
     # achar uma biblioteca
     zmq = CDLL(find_library("zmq"), use_errno=True)
 
-    # void *zmq_init (int io_threads);
-    # definição de um método, retorno(restype) e argumentos(argtypes = [])
+Ctypes
+------
+
+Descrição dos métodos:
+
+.. sourcecode:: python
+
     zmq.zmq_init.restype = c_void_p
     zmq.zmq_init.argtypes = [c_int]
-    zmq.zmq_socket.restype = c_int
-    zmq.zmq_socket.argtypes = [c_void_p, c_int]
 
+
+Ctypes
+------
+
+Descrição dos métodos:
+
+.. sourcecode:: python
+
+    zmq.zmq_init.restype = c_void_p
+    zmq.zmq_init.argtypes = [c_int]
+
+    # chamada do método definido
+    ctx = zmq.zmq_init(1)
 
 \+ Ctypes
 ---------
 
 .. sourcecode:: python
 
-    # chamada do método definido
-    ctx = zmq.zmq_init(1)
+    zmq.zmq_socket.restype = c_int
+    zmq.zmq_socket.argtypes = [c_void_p, c_int]
+
+\+ Ctypes
+---------
+
+.. sourcecode:: python
+
+    zmq.zmq_socket.restype = c_int
+    zmq.zmq_socket.argtypes = [c_void_p, c_int]
+
+    # chamada de zmq_socket
     socket = zmq.zmq_socket(ctx, c_int(1))
 
 Ctypes - Performance
@@ -176,13 +238,18 @@ Ctypes - Performance
   se foram poucas trocas do contexto Python para o contexto C, performance
   não é problema.
 * Se exigir muitas "trocas de contexto", entre Python e C, performance
-  pode ser um problema porque essa troca não é rápida.
+  pode ser um problema porque essa troca tem um custo.
 
 Ctypes - Observações
 --------------------
 
 * Prático para integrar com código que já existe.
 * Fácil de causar SEGFAULT no interpretador.
+
+.. sourcecode:: python
+
+    from ctypes import c_char_p; c_char_p(1).value
+
 * Compatível com PyPy (embora não seja a melhor opção).
 * Python puro, testes não dependem de compilação/instalação.
 
@@ -190,41 +257,81 @@ Cython - Prático
 ----------------
 
 * Linguagem que mistura C e Python ou Python "anotado".
-* Performance comparável a C-Extensions.
+* Performance equivalente a extensões nativas(C-Extensions).
 * Depende de compilação.
 * Debug baseado no GDB (em código C).
-* Diversos níveis de uso e complexidade.
+* Diversos níveis de uso e complexidade. (o que é bom!)
 
 Cython - Python Puro
 --------------------
 
+.. class:: big
+
 .. sourcecode:: python
 
-    x = cython.declare(cython.int) 
+    x = cython.declare(cython.int)
 
-    @cython.locals(a=cython.double, b=cython.double, n=cython.p_double)
-    def foo(a, b, x, y):
+Cython - Python Puro
+--------------------
+
+.. class:: big
+
+.. sourcecode:: python
+
+    @cython.locals(a=cython.double,
+                   b=cython.double)
+    def foo(a, b):
         ...
 
-    cython.declare(x=cython.int, x_ptr=cython.p_int)
-    x_ptr = cython.address(x)
+Cython - Python Puro
+--------------------
 
+.. class:: big
+
+.. sourcecode:: python
+
+    cython.declare(x=cython.int,
+                   x_ptr=cython.p_int)
+    x_ptr = cython.address(x)
 
 Cython - Python & C
 -------------------
+
+.. class:: huge
+
+.. sourcecode:: cython
+
+    def soma(a, b):
+        return a + b
+
+Cython - Python & C
+-------------------
+
+.. class:: huge
 
 .. sourcecode:: cython
 
     cdef int soma(int a, int b):
         return a + b
 
+Cython - Compilação
+-------------------
+
+.. class:: huge
+
+.. sourcecode:: bash
+
+    $ cython arquivo.pyx
+
+Depois, ou compila "na mão" ou usa setuptools/distribute para
+compilar e distribuir.
+
 
 Cython - Resumo
 ---------------
 
-* Boa opção para escrever C-Extensions poupando muito trabalho braçal.
+* Boa opção para escrever extensões nativas poupando trabalho braçal.
 * É possível começar só com python puro.
-* É um projeto com muitos usuários.
 * Compatibilidade com PyPy em andamento.
 
 CFFI - Prático
@@ -234,6 +341,17 @@ CFFI - Prático
 * Baseado na API LuaJIT FFI.
 * Compatível com PyPy(trunk) e seu código é especializado pelo JIT.
 * ABI & API level.
+
+CFFI
+----
+
+.. sourcecode:: python
+
+    declarations =
+    '''
+        void *zmq_init(int io_threads);
+        void *zmq_socket(void* context, int type);
+    '''
 
 CFFI
 ----
@@ -277,6 +395,8 @@ CFFI - Resumo
 (R)Python
 ---------
 
+.. class:: tiny
+
 .. sourcecode:: python
 
     from pypy.translator.tool.cbuild import ExternalCompilationInfo
@@ -285,8 +405,8 @@ CFFI - Resumo
     eci = ExternalCompilationInfo(includes=['zmq.h'],
                                   libraries=['zmq'])
 
-    zmq_init = rffi.llexternal("zmq_init", 
-                               [rffi.INT], 
+    zmq_init = rffi.llexternal("zmq_init",
+                               [rffi.INT],
                                rffi.VOIDP,
                                compilation_info=eci)
 
@@ -297,6 +417,8 @@ CFFI - Resumo
 
 \+ (R)Python
 ------------
+
+.. class:: tiny
 
 .. sourcecode:: python
 
@@ -319,3 +441,8 @@ CFFI - Resumo
 
 FIM
 ---
+
+.. class:: huge, center
+
+    Perguntas?
+    Obrigado!
