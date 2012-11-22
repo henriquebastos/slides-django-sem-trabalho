@@ -1,10 +1,15 @@
 .. include:: <s5defs.txt>
 
-Python & C
-==========
+.. container:: center, huge
 
-:Authors: Felipe Cruz
-:Date:    $Date: 2012-11-06 11:08:00 +0000 (Thu, 12 Nov 2012) $
+    Trabalhando com Django
+
+    para não ter trabalho
+
+.. container:: center, small
+
+    Henrique Bastos
+
 
 Quem?
 -----
