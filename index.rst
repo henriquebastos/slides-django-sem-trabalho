@@ -20,11 +20,9 @@ Quem?
 
 .. class:: incremental
 
-* Trabalho há 3/4 anos com Python.
-* Já contribuí em Projetos OpenSource com código Python e C
-
-* twitter: @felipejcruz
-* github: https://github.com/felipecruz
+* twitter: @henriquebastos
+* email: henrique@bastos.net
+* blog: http://henriquebastos.net
 
 
 Quem?
