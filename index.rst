@@ -87,15 +87,28 @@ Não use diretórios hardcoded
         STATIC_ROOT = PROJECT_DIR.child('public')
         MEDIA_ROOT = PROJECT_DIR.child('media')
 
-Python C Extensions - Prático
+Use o django-nose com rednose
 -----------------------------
 
-* http://docs.python.org/3.3/extending/extending.html
+* pip install django-nose rednose
 
-* C usando a API C/Pyhton.
-* Exige compilação.
-* Debug mais complexo.
-* Compatível com PyPy através do Cpyext (não recomendado).
+.. container:: small
+
+    .. sourcecode:: python
+
+        # settings.py
+
+        TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+        NOSE_ARGS = [
+            '--match=^(must|ensure|should|test|it_should)',
+            '--where=%s' % PROJECT_DIR,
+            '--id-file=%s' % PROJECT_DIR.child('.noseids'),
+            '--all-modules',
+            '--with-id',
+            '--verbosity=2',
+            '--nologcapture',
+            '--rednose',
+        ]
 
 
 C - Struct de Módulo
