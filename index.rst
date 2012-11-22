@@ -136,6 +136,26 @@ Proxy Models
 
     # É só usar Menu.objects.all() no template.
 
+Evite import cíclico no models.py
+---------------------------------
+
+.. sourcecode:: python
+
+    from django.db import models
+    from project.app.models import OtherModel
+
+    class MyModel(models.Model):
+        other = models.ForeignKey(OtherModel)
+
+Evite import cíclico no models.py
+---------------------------------
+
+.. sourcecode:: python
+
+    from django.db import models
+
+    class MyModel(models.Model):
+        other = models.ForeignKey("OtherModel") # String
 C - Struct de Módulo
 --------------------
 
