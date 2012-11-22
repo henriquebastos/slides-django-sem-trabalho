@@ -45,9 +45,10 @@ Motivação
 
 .. container:: handout
 
-    Explicar motivação
+    Desperdício, horas-extras, débtos técnicos, etc
+    Mas não é por falta de recurso!
 
-C ainda é uma linguagem muito usada e indiscutivelmente rápida.
+"Ainda há muito sofrimento humano no processo de desenvolvimento de software!"
 
 Python é uma linguagem é muito usada, flexível e produtiva.
 
