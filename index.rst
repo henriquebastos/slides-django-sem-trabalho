@@ -156,6 +156,41 @@ Evite import cíclico no models.py
 
     class MyModel(models.Model):
         other = models.ForeignKey("OtherModel") # String
+
+Relatórios em PDF
+-----------------
+
+* Morte ao Reportlab!
+* Vida longa ao `wkhtmltopdf <http://pypi.python.org/pypi/wkhtmltopdf/0.2>`_
+
+Exemplo
+-------
+
+.. container:: tiny
+
+    .. sourcecode:: python
+
+        import subprocess
+        from tempfile import NamedTemporaryFile
+        from django.template.loader import render_to_string
+
+
+        def view(request):
+            context = {...}
+            html = render_to_string('template.html', context)
+
+            with NamedTemporaryFile(suffix=".html") as f:
+                f.write(html)
+                f.flush()
+
+                subprocess.call([settings.WKHTMLTOPDF_PATH, f.name, '/tmp/report.pdf'])
+                content = open('/tmp/report.pdf', 'rb').read()
+
+            response = HttpResponse(mimetype='application/force-download')
+            response['Content-Disposition'] = 'attachment; filename=report.pdf'
+            response.write(content)
+
+            return response
 C - Struct de Módulo
 --------------------
 
