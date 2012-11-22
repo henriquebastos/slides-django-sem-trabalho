@@ -110,6 +110,31 @@ Use o django-nose com rednose
             '--rednose',
         ]
 
+Proxy Models
+------------
+
+"Eu quero que o menu seja uma dropdown contendo o nomes das cidades e a
+quantidade de cupons validos cuja data de expiração seja posterior ao
+dia de hoje."
+
+Proxy Models
+------------
+
+.. sourcecode:: python
+
+    class MenuManager(models.Manager):
+        def get_queryset(self):
+            qs = super(MenuManager, self).get_queryset()
+            qs = qs.filter(...)
+            return qs
+
+    class Menu(ModelCupom):
+        objects = MenuManager()
+
+        class Meta:
+            proxy = True
+
+    # É só usar Menu.objects.all() no template.
 
 C - Struct de Módulo
 --------------------
