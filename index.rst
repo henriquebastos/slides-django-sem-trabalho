@@ -69,23 +69,23 @@ Setup dá trabalho
 * Comporte-se como um Chef de cozinha.
 * Implementação Top-Down: template primeiro, modelo por último!
 
-Terceiros
+Não use diretórios hardcoded
+----------------------------
 
-* Cython
-* Cffi
+* pip install unipath
 
-Outras Opções
--------------
+.. container:: small
 
-* Pyrex
-* (R)Python
+    .. sourcecode:: python
 
-Gerador de binding
-~~~~~~~~~~~~~~~~~~
+        # settings.py
 
-* PyAutoC
-* SWIG
+        from unipath import Path
 
+        PROJECT_DIR = Path(__file__).parent
+
+        STATIC_ROOT = PROJECT_DIR.child('public')
+        MEDIA_ROOT = PROJECT_DIR.child('media')
 
 Python C Extensions - Prático
 -----------------------------
