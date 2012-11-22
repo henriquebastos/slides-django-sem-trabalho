@@ -50,9 +50,15 @@ Motivação
 
 "Ainda há muito sofrimento humano no processo de desenvolvimento de software!"
 
-Python é uma linguagem é muito usada, flexível e produtiva.
+Agenda
+------
 
-Como unir os 2 mundos?
+* Setup
+* Rotas
+* Views
+* Forms
+* Models
+* Templates
 
 Opções
 ------
