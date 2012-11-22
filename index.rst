@@ -60,13 +60,14 @@ Agenda
 * Models
 * Templates
 
-Opções
-------
+Setup dá trabalho
+-----------------
 
-Suportadas Oficialmente
+.. class:: incremental
 
-* Python C Extensions
-* Ctypes
+* Live Software: Código bom é codigo rodando e servindo ao usuário.
+* Comporte-se como um Chef de cozinha.
+* Implementação Top-Down: template primeiro, modelo por último!
 
 Terceiros
 
