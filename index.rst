@@ -191,6 +191,18 @@ Exemplo
             response.write(content)
 
             return response
+
+Django Admin
+------------
+
+.. container:: center, huge
+
+    .. class:: incremental
+
+        Aceite a natureza do Admin
+        Se precisa mudar muito implemente umaCustomView
+
+
 C - Struct de Módulo
 --------------------
 
