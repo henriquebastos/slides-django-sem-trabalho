@@ -14,15 +14,12 @@
 Quem?
 -----
 
-.. container:: handout
-
-    Apresentação Pessoal
-
 .. class:: incremental
 
-* twitter: @henriquebastos
-* email: henrique@bastos.net
-* blog: http://henriquebastos.net
+* `@henriquebastos <http://twitter.com/henriquebastos>`_
+* henrique@bastos.net
+* http://henriquebastos.net
+* http://welcometothedjango.com.br
 
 
 Quem?
