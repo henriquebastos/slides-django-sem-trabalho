@@ -77,18 +77,36 @@ Settings com valores padrões
 
 .. container:: small
 
+    * Use o `django-appconf <http://pypi.python.org/pypi/django-appconf>`_
+
     .. sourcecode:: python
 
-        # app/conf.py
-        from django.conf import settings
+        # paypal/conf.py
+        from appconf import AppConf
 
-        TEST = getattr(settings, "PAYPAL_TEST", True)
+        class PaypalConf(AppConf):
+            TEST = False
+            POSTBACK_ENDPOINT = "https://www.paypal.com/cgi-bin/webscr"
 
-        # API Endpoints.
-        POSTBACK_ENDPOINT = "https://www.paypal.com/cgi-bin/webscr"
-        SANDBOX_POSTBACK_ENDPOINT = "https://www.sandbox.paypal.com/cgi-bin/webscr"
+            #...
 
-        # Images
-        IMAGE = getattr(settings, "PAYPAL_IMAGE", "http://paypal.com/btn.gif")
-        SUBSCRIPTION_IMAGE = "https://paypal.com/btn.gif"
+            class Meta:
+                prefix = 'paypal'
+                holder = 'paypal.conf.settings'
 
+Settings com valores padrões
+----------------------------
+
+.. container:: small
+
+    * Como fica na view?
+
+    .. sourcecode:: python
+
+        # paypal/views.py
+        from django.http import HttpResponse
+        from paypal.conf import settings
+
+        def someview(request):
+            text = 'Endpoint is: %s' % settings.PAYPAL_POSTBACK_ENDPOINT
+            return HttpResponse(text)
