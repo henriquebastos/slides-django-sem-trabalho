@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.9.1: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title></title>
+<style type="text/css">
+
+.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #E6E6E1; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { color: #000000; font-weight: bold } /* Keyword */
+.highlight .o { color: #000000; font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d01040 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d01040 } /* Literal.String.Backtick */
+.highlight .sc { color: #d01040 } /* Literal.String.Char */
+.highlight .sd { color: #d01040 } /* Literal.String.Doc */
+.highlight .s2 { color: #d01040 } /* Literal.String.Double */
+.highlight .se { color: #d01040 } /* Literal.String.Escape */
+.highlight .sh { color: #d01040 } /* Literal.String.Heredoc */
+.highlight .si { color: #d01040 } /* Literal.String.Interpol */
+.highlight .sx { color: #d01040 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d01040 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="ui/loogica/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="ui/loogica/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/loogica/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/loogica/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/loogica/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+
+<style type="text/css">
+#currentSlide {display: none;}
+</style>
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+
+
+<!-- Definitions of interpreted text roles (classes) for S5/HTML data. -->
+<!-- This data file has been placed in the public domain. -->
+<!-- Colours
+======= -->
+<!-- Text Sizes
+========== -->
+<!-- Display in Slides (Presentation Mode) Only
+========================================== -->
+<!-- Display in Outline Mode Only
+============================ -->
+<!-- Display in Print Only
+===================== -->
+<!-- Display in Handout Mode Only
+============================ -->
+<!-- Incremental Display
+=================== -->
+<div class="center huge container">
+<p>Trabalhando com Django</p>
+<p>para não ter trabalho</p>
+</div>
+<div class="center small container">
+Henrique Bastos</div>
+
+</div>
+<div class="slide" id="quem">
+<h1>Quem?</h1>
+<ul class="incremental simple">
+<li><a class="reference external" href="http://twitter.com/henriquebastos">&#64;henriquebastos</a></li>
+<li><a class="reference external" href="mailto:henrique&#64;bastos.net">henrique&#64;bastos.net</a></li>
+<li><a class="reference external" href="http://henriquebastos.net">http://henriquebastos.net</a></li>
+<li><a class="reference external" href="http://welcometothedjango.com.br">http://welcometothedjango.com.br</a></li>
+</ul>
+</div>
+<div class="slide" id="id1">
+<h1>Quem?</h1>
+<div class="center huge container">
+<object data="assets/loogica_logo.svg" style="width: 600px; height: 250px;" type="image/svg+xml">
+assets/loogica_logo.svg</object>
+</div>
+<div class="center huge container">
+<object data="assets/dekode_logo.svg" style="width: 600px; height: 250px;" type="image/svg+xml">
+assets/dekode_logo.svg</object>
+</div>
+</div>
+<div class="slide" id="motivacao">
+<h1>Motivação</h1>
+<ul class="simple">
+<li>Zen</li>
+</ul>
+</div>
+<div class="slide" id="o-setup-influencia-tudo">
+<h1>O setup influencia tudo</h1>
+<ul class="incremental simple">
+<li>Comporte-se como um Chef de cozinha.</li>
+<li>Live Software: Código bom é codigo rodando.</li>
+<li>Top-Down: template primeiro, modelo depois.</li>
+</ul>
+</div>
+<div class="slide" id="use-virtualenv">
+<h1>Use virtualenv</h1>
+<div class="highlight"><pre>virtualenv --distribute --unzip-setuptools project
+
+<span class="nb">cd </span>project
+
+<span class="c"># Ativa o virtualenv no Unix</span>
+<span class="nb">source </span>bin/activate
+
+<span class="c"># Ativa o virtualenv no Windows</span>
+Scripts<span class="se">\a</span>ctivate
+
+pip install django
+</pre></div>
+</div>
+<div class="slide" id="virtualenv-tips-for-windows">
+<h1>Virtualenv Tips for Windows</h1>
+<div class="section" id="scripts-django-admin-bat">
+<h2>Scripts\django-admin.bat</h2>
+<div class="highlight"><pre><span class="p">@</span>python <span class="s2">&quot;%VIRTUAL_ENV%\Scripts\django-admin.py&quot;</span> %*
+</pre></div>
+</div>
+<div class="section" id="scripts-manage-bat">
+<h2>Scripts\manage.bat</h2>
+<div class="highlight"><pre><span class="p">@</span>python <span class="s2">&quot;%VIRTUAL_ENV%\manage.py&quot;</span> %*
+</pre></div>
+</div>
+</div>
+<div class="slide" id="virtualenv-tips-for-unix">
+<h1>Virtualenv Tips for Unix</h1>
+<div class="highlight"><pre><span class="c"># Crie um alias no seu ~/.bashrc ou ~/.profile</span>
+<span class="nb">alias </span><span class="nv">manage</span><span class="o">=</span><span class="s1">&#39;python $VIRTUAL_ENV/manage.py&#39;</span>
+</pre></div>
+</div>
+<div class="slide" id="reduza-a-barreira-de-contribuicao">
+<h1>Reduza a barreira de contribuição</h1>
+<ul>
+<li><p class="first"><a class="reference external" href="https://github.com/henriquebastos/virtualenv-bootstrap">Virtualenv-Bootstrap</a></p>
+</li>
+<li><p class="first">Com isso o setup é só:</p>
+<blockquote>
+<div class="highlight"><pre>git clone repositorio
+<span class="nb">cd </span>repositorio
+python bootstrap
+</pre></div>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="slide" id="requirements-txt">
+<h1>Requirements.txt</h1>
+<ul class="simple">
+<li>Procure manter apenas 1 <tt class="docutils literal">requirements.txt</tt>.</li>
+<li>Explicite a versão das dependências: <tt class="docutils literal">pip freeze</tt></li>
+<li>Mantenha as preferêncais do desenvolvedor de fora.</li>
+<li>Principalmente o IPython.</li>
+</ul>
+</div>
+<div class="slide" id="nome-de-app-e-dificil">
+<h1>Nome de app é difícil...</h1>
+<div class="small container">
+<div class="highlight"><pre>~repositorio<span class="nv">$ </span>django-admin.py startproject project .
+
+~repositorio<span class="nv">$ </span><span class="nb">cd </span>project
+
+~project<span class="nv">$ </span>django-admin.py startapp core
+</pre></div>
+</div>
+</div>
+<div class="slide" id="use-as-convencoes-do-django">
+<h1>Use as convenções do Django</h1>
+<div class="highlight"><pre>~project<span class="nv">$ </span>mkdir -p core/templates/core
+~project<span class="nv">$ </span>mkdir -p core/static/<span class="o">{</span>css,img,js<span class="o">}</span>
+</pre></div>
+</div>
+<div class="slide" id="projeto-dentro-do-repositorio">
+<h1>Projeto <em>dentro</em> do repositório</h1>
+<div class="small container">
+<pre class="literal-block">
+repositorio/
+    manage.py
+    project/
+        __init__.py
+        settings.py
+        urls.py
+        wsgi.py
+        core/
+            __init__.py
+            models.py
+            urls.py
+            views.py
+            static/
+            templates/
+                core/
+            tests/
+                __init__.py
+</pre>
+</div>
+</div>
+<div class="slide" id="all-settings-are-different">
+<h1>All Settings are different</h1>
+<ul class="simple">
+<li>Configurações de código: <tt class="docutils literal">INSTALLED_APPS</tt></li>
+<li>Configurações da instância: <tt class="docutils literal">EMAIL_HOST</tt></li>
+</ul>
+<p>Ideal é ter <em>1</em> settings.py para <em>N</em> instâncias do projeto.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.12factor.net/">12 factors</a></li>
+</ul>
+</div>
+<div class="slide" id="settings-do-ambiente">
+<h1>Settings do Ambiente</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">EMAIL_HOST</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;EMAIL_HOST&#39;</span><span class="p">,</span> <span class="s">&#39;localhost&#39;</span><span class="p">)</span>
+<span class="n">EMAIL_HOST_USER</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;EMAIL_HOST_USER&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span>
+<span class="n">EMAIL_HOST_PASSWORD</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;EMAIL_HOST_PASSWORD&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="settings-no-mundo-real">
+<h1>Settings no mundo real</h1>
+<pre class="literal-block">
+repositorio/
+    project/
+        settings/
+            __init__.py
+            development.py
+            production.py
+            stage.py
+</pre>
+</div>
+<div class="slide" id="id2">
+<h1>Settings no mundo real</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="nb">cd </span>repositorio/project
+
+<span class="c"># Transforme o settings em um package.</span>
+mkdir settings
+touch settings/__init__.py
+
+<span class="c"># Crie o settings de produção.</span>
+mv settings.py settings/production.py
+
+<span class="c"># Crie os outros settings derivando do produção.</span>
+<span class="nb">echo</span> <span class="s2">&quot;from production import *&quot;</span> &gt; settings/<span class="o">{</span>stage,development<span class="o">}</span>.py
+</pre></div>
+</div>
+</div>
+<div class="slide" id="nao-use-diretorios-hardcoded">
+<h1>Não use diretórios hardcoded</h1>
+<ul class="simple">
+<li>pip install unipath</li>
+</ul>
+<div class="small container">
+<div class="highlight"><pre><span class="c"># settings.py</span>
+
+<span class="kn">from</span> <span class="nn">unipath</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">PROJECT_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span>
+
+<span class="n">STATIC_ROOT</span> <span class="o">=</span> <span class="n">PROJECT_DIR</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="s">&#39;public&#39;</span><span class="p">)</span>
+<span class="n">MEDIA_ROOT</span> <span class="o">=</span> <span class="n">PROJECT_DIR</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="s">&#39;media&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="settings-com-valores-padroes">
+<h1>Settings com valores padrões</h1>
+<div class="small container">
+<ul class="simple">
+<li>Use o <a class="reference external" href="http://pypi.python.org/pypi/django-appconf">django-appconf</a></li>
+</ul>
+<div class="highlight"><pre><span class="c"># paypal/conf.py</span>
+<span class="kn">from</span> <span class="nn">appconf</span> <span class="kn">import</span> <span class="n">AppConf</span>
+
+<span class="k">class</span> <span class="nc">PaypalConf</span><span class="p">(</span><span class="n">AppConf</span><span class="p">):</span>
+    <span class="n">TEST</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="n">POSTBACK_ENDPOINT</span> <span class="o">=</span> <span class="s">&quot;https://www.paypal.com/cgi-bin/webscr&quot;</span>
+
+    <span class="c">#...</span>
+
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">prefix</span> <span class="o">=</span> <span class="s">&#39;paypal&#39;</span>
+        <span class="n">holder</span> <span class="o">=</span> <span class="s">&#39;paypal.conf.settings&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="id3">
+<h1>Settings com valores padrões</h1>
+<div class="small container">
+<ul class="simple">
+<li>Como fica na view?</li>
+</ul>
+<div class="highlight"><pre><span class="c"># paypal/views.py</span>
+<span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">HttpResponse</span>
+<span class="kn">from</span> <span class="nn">paypal.conf</span> <span class="kn">import</span> <span class="n">settings</span>
+
+<span class="k">def</span> <span class="nf">someview</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s">&#39;Endpoint is: </span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="n">settings</span><span class="o">.</span><span class="n">PAYPAL_POSTBACK_ENDPOINT</span>
+    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="mantenha-o-urlconf-limpo">
+<h1>Mantenha o URLCONF limpo</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="c"># urls.py</span>
+<span class="kn">from</span> <span class="nn">django.conf.urls</span> <span class="kn">import</span> <span class="n">patterns</span><span class="p">,</span> <span class="n">include</span><span class="p">,</span> <span class="n">url</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span><span class="s">&#39;django.views.generic.simple&#39;</span><span class="p">,</span>
+    <span class="n">url</span><span class="p">(</span><span class="s">r&#39;^$&#39;</span><span class="p">,</span> <span class="s">&#39;direct_to_template&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;template&#39;</span><span class="p">:</span> <span class="s">&#39;index.html&#39;</span><span class="p">}),</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p class="red"><em>Nope</em></p>
+</div>
+<div class="slide" id="mantenha-o-urls-py-o-mais-limpo-possivel">
+<h1>Mantenha o urls.py o mais limpo possível</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="c"># urls.py</span>
+<span class="kn">from</span> <span class="nn">django.conf.urls</span> <span class="kn">import</span> <span class="n">patterns</span><span class="p">,</span> <span class="n">include</span><span class="p">,</span> <span class="n">url</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span><span class="s">&#39;project.core.views&#39;</span><span class="p">,</span>
+    <span class="n">url</span><span class="p">(</span><span class="s">r&#39;^$&#39;</span><span class="p">,</span> <span class="s">&#39;homepage&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">&#39;homepage&#39;</span><span class="p">),</span>
+<span class="p">)</span>
+
+
+<span class="c"># views.py</span>
+<span class="kn">from</span> <span class="nn">django.views.generic.simple</span> <span class="kn">import</span> <span class="n">direct_to_template</span>
+
+<span class="k">def</span> <span class="nf">homepage</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">direct_to_template</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">template</span><span class="o">=</span><span class="s">&#39;index.html&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="green"><em>Yep</em></p>
+</div>
+<div class="slide" id="views-sao-buracos-negros">
+<h1>Views são buracos negros</h1>
+<p>Refatore</p>
+<ul class="simple">
+<li>Conversões de dados da requisição nos forms;</li>
+<li>Representação dos dados com template filters;</li>
+<li>Queries encadeadas encapsuladas no Manager;</li>
+<li>Sinais para notificar eventos à outras apps;</li>
+</ul>
+<p>Refatore novamente!</p>
+<ul class="simple">
+<li>Crie camadas de serviço quando muitos modelos mudarem simultaneamente.</li>
+</ul>
+</div>
+<div class="slide" id="decorators-empilhados-repetidamente-sao-sintoma">
+<h1>Decorators empilhados repetidamente são sintoma</h1>
+<ul class="simple">
+<li>Pode estar faltando um <tt class="docutils literal">middleware</tt>;</li>
+<li>Falta uma classe base para as views;</li>
+</ul>
+</div>
+<div class="slide" id="relatorios-em-pdf">
+<h1>Relatórios em PDF</h1>
+<ul class="simple">
+<li>Morte ao Reportlab!</li>
+<li>Vida longa ao <a class="reference external" href="http://pypi.python.org/pypi/wkhtmltopdf/0.2">wkhtmltopdf</a></li>
+</ul>
+</div>
+<div class="slide" id="exemplo">
+<h1>Exemplo</h1>
+<div class="tiny container">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="kn">from</span> <span class="nn">tempfile</span> <span class="kn">import</span> <span class="n">NamedTemporaryFile</span>
+<span class="kn">from</span> <span class="nn">django.template.loader</span> <span class="kn">import</span> <span class="n">render_to_string</span>
+
+
+<span class="k">def</span> <span class="nf">view</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+    <span class="n">html</span> <span class="o">=</span> <span class="n">render_to_string</span><span class="p">(</span><span class="s">&#39;template.html&#39;</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="n">NamedTemporaryFile</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s">&quot;.html&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+
+        <span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="n">settings</span><span class="o">.</span><span class="n">WKHTMLTOPDF_PATH</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s">&#39;/tmp/report.pdf&#39;</span><span class="p">])</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;/tmp/report.pdf&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+    <span class="n">response</span> <span class="o">=</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="n">mimetype</span><span class="o">=</span><span class="s">&#39;application/force-download&#39;</span><span class="p">)</span>
+    <span class="n">response</span><span class="p">[</span><span class="s">&#39;Content-Disposition&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;attachment; filename=report.pdf&#39;</span>
+    <span class="n">response</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">response</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="organize-o-fluxo-das-views">
+<h1>Organize o fluxo das views</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">subscribe</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s">&#39;POST&#39;</span><span class="p">:</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">SubscriptionForm</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">POST</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">form</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="n">form</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">HttpResponseRedirect</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">get_absolute_url</span><span class="p">())</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">SubscriptionForm</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">direct_to_template</span><span class="p">(</span><span class="n">request</span><span class="p">,</span>
+                              <span class="s">&#39;subscriptions/subscription_form.html&#39;</span><span class="p">,</span>
+                              <span class="p">{</span><span class="s">&#39;form&#39;</span><span class="p">:</span> <span class="n">form</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="single-responsability">
+<h1>Single Responsability</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">subscribe</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s">&#39;POST&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">create</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">new</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">new</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">direct_to_template</span><span class="p">(</span><span class="n">request</span><span class="p">,</span>
+                              <span class="s">&#39;subscriptions/subscription_form.html&#39;</span><span class="p">,</span>
+                              <span class="p">{</span><span class="s">&#39;form&#39;</span><span class="p">:</span> <span class="n">SubscriptionForm</span><span class="p">()})</span>
+<span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="n">form</span> <span class="o">=</span> <span class="n">SubscriptionForm</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">POST</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">form</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+        <span class="k">return</span> <span class="n">direct_to_template</span><span class="p">(</span><span class="n">request</span><span class="p">,</span>
+                                  <span class="s">&#39;subscriptions/subscription_form.html&#39;</span><span class="p">,</span>
+                                  <span class="p">{</span><span class="s">&#39;form&#39;</span><span class="p">:</span> <span class="n">form</span><span class="p">})</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">form</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">HttpResponseRedirect</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">get_absolute_url</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="reaproveite-o-que-esta-pronto">
+<h1>Reaproveite o que está pronto</h1>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.views.generic</span> <span class="kn">import</span> <span class="n">CreateView</span>
+
+<span class="k">class</span> <span class="nc">SubscriptionCreate</span><span class="p">(</span><span class="n">CreateView</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">Subscription</span>
+    <span class="n">form_class</span> <span class="o">=</span> <span class="n">SubscriptionForm</span>
+</pre></div>
+</div>
+<div class="slide" id="o-template-e-do-seu-designer">
+<h1>O Template é do seu Designer!</h1>
+<ul class="simple">
+<li>Passe tipos de alto nível para o contexto;</li>
+<li>Não defina a representação dos seus objetos na view;</li>
+<li>Use template filters:</li>
+</ul>
+<div class="highlight"><pre><span class="cp">{{</span> <span class="nv">subscription.created_at</span><span class="o">|</span><span class="nf">date</span><span class="s2">:&quot;d/m/Y&quot;</span> <span class="cp">}}</span><span class="x"></span>
+<span class="cp">{{</span> <span class="nv">text</span><span class="o">|</span><span class="nf">escape</span><span class="o">|</span><span class="nf">linebreaks</span> <span class="cp">}}</span><span class="x"></span>
+<span class="cp">{{</span> <span class="nv">text</span><span class="o">|</span><span class="nf">truncatewords</span><span class="s2">:&quot;30&quot;</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</div>
+<div class="slide" id="cuidado-com-include">
+<h1>Cuidado com {% include %}</h1>
+<ul class="simple">
+<li>Use como <em>snippet</em> em um mesmo template;</li>
+<li>Evite usar o mesmo <em>snippet</em> em mais de um template;</li>
+<li>{% includes %} genéricos incham os contextos;</li>
+<li>Use {% extends %} para <em>cabeçalho</em> e <em>rodapé</em>;</li>
+</ul>
+</div>
+<div class="slide" id="isole-o-conteudo-com-i18n">
+<h1>Isole o conteúdo com i18n</h1>
+<ul class="simple">
+<li>Deixe a turma do marketing definir o conteúdo;</li>
+<li>No models.py use o <tt class="docutils literal">ugettext_lazy</tt>;</li>
+<li>No resto use o <tt class="docutils literal">ugettext</tt>;</li>
+<li>Pluralização é com o <tt class="docutils literal">ungettext</tt>;</li>
+<li>Use mesmo que seu sistema seja apenas em <em>pt_BR</em>;</li>
+</ul>
+</div>
+<div class="slide" id="django-admin">
+<h1>Django Admin</h1>
+<ul class="simple">
+<li>Aceite a natureza do Admin;</li>
+<li>Se precisa mudar muito implemente CustomViews;</li>
+<li>Decore sua CustomView com <em>&#64;admin_view</em>;</li>
+<li>Reimplemente o <tt class="docutils literal">ModelAdmin.get_urls</tt>;</li>
+</ul>
+</div>
+<div class="slide" id="relacione-models-sem-import">
+<h1>Relacione models sem <em>import</em></h1>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+<span class="kn">from</span> <span class="nn">project.app.models</span> <span class="kn">import</span> <span class="n">OtherModel</span>
+
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">other</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">OtherModel</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="slide" id="id4">
+<h1>Relacione models sem <em>import</em></h1>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">other</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="s">&quot;OtherModel&quot;</span><span class="p">)</span> <span class="c"># \o/</span>
+</pre></div>
+</div>
+<div class="slide" id="choices">
+<h1>Choices</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="k">class</span> <span class="nc">Uf</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">abrev</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>   <span class="c"># RJ</span>
+    <span class="n">nome</span>  <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span> <span class="c"># Rio de Janeiro</span>
+
+<span class="k">class</span> <span class="nc">Logradouro</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">abrev</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>  <span class="c"># Av.</span>
+    <span class="n">nome</span>  <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span> <span class="c"># Avenida</span>
+
+<span class="k">class</span> <span class="nc">Imovel</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">uf</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="s">&#39;Uf&#39;</span><span class="p">)</span>
+    <span class="n">logradouro</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="s">&#39;Logradouro&#39;</span><span class="p">)</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="id5">
+<h1>Choices</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="n">UF</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="s">&#39;RJ&#39;</span><span class="p">,</span> <span class="s">&#39;Rio de Janeiro),</span>
+    <span class="o">...</span>
+<span class="p">)</span>
+
+<span class="n">LOGRADOURO</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="s">&#39;Av.&#39;</span><span class="p">,</span> <span class="s">&#39;Avenida&#39;</span><span class="p">),</span>
+    <span class="o">...</span>
+<span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Imovel</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">uf</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">UF</span><span class="p">,</span> <span class="n">db_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">logradouro</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">LOGRADOURO</span><span class="p">)</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="medo-de-mudar-schema-nao-e-motivo-para-usar-mongodb">
+<h1>Medo de mudar <em>Schema</em> não é motivo para usar MongoDB</h1>
+<ul class="simple">
+<li>Use o South;</li>
+<li>Domine o funcionamento do South;</li>
+</ul>
+</div>
+<div class="slide" id="desenvolvendo-com-o-south">
+<h1>Desenvolvendo com o South</h1>
+<ul class="simple">
+<li>Cuidado para não acumular migrações irrelevantes.</li>
+<li>Use <tt class="docutils literal">SOUTH_TEST_MIGRATE=False</tt> para experimentar mudanças de modelo.</li>
+</ul>
+</div>
+<div class="slide" id="proxy-models">
+<h1>Proxy Models</h1>
+<pre class="literal-block">
+Dado que eu tenho um site de cupons
+Quando eu visitar a home
+Eu quero ver uma uma dropdown contendo
+    o nomes das cidades
+    e a quantidade de cupons
+    considerando apenas cidades com cupons
+    cujas datas de expiração seja posterior a hoje.
+</pre>
+</div>
+<div class="slide" id="id6">
+<h1>Proxy Models</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="k">class</span> <span class="nc">MenuManager</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Manager</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">get_queryset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">qs</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">MenuManager</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">get_queryset</span><span class="p">()</span>
+        <span class="n">qs</span> <span class="o">=</span> <span class="n">qs</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">qs</span>
+
+<span class="k">class</span> <span class="nc">Menu</span><span class="p">(</span><span class="n">ModelCupom</span><span class="p">):</span>
+    <span class="n">objects</span> <span class="o">=</span> <span class="n">MenuManager</span><span class="p">()</span>
+
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">proxy</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="c"># É só usar Menu.objects.all() no template.</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="encapsule-queries-frequentes">
+<h1>Encapsule queries frequentes</h1>
+<p><tt class="docutils literal">pip install <span class="pre">django-model-utils</span></tt></p>
+<div class="small container">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">model_utils.managers</span> <span class="kn">import</span> <span class="n">PassThroughManager</span>
+<span class="kn">from</span> <span class="nn">django.models.query</span> <span class="kn">import</span> <span class="n">QuerySet</span>
+
+<span class="k">class</span> <span class="nc">TodoQuerySet</span><span class="p">(</span><span class="n">QuerySet</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">incomplete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">is_done</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">high_priority</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">priority</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Todo</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="c"># other fields go here..</span>
+
+    <span class="n">objects</span> <span class="o">=</span> <span class="n">PassThroughManager</span><span class="o">.</span><span class="n">for_queryset_class</span><span class="p">(</span><span class="n">TodoQuerySet</span><span class="p">)()</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="validacao-de-formularios">
+<h1>Validação de Formulários</h1>
+<ul class="simple">
+<li>Validação em Javascript é por UX.</li>
+<li>Validação de backend é para segurança.</li>
+<li>Elas se complementam, mas uma não substitui a outra.</li>
+</ul>
+</div>
+<div class="slide" id="desacople-o-estilo-do-form">
+<h1>Desacople o estilo do Form</h1>
+<p class="small gray"><tt class="docutils literal">template.html</tt></p>
+<div class="tiny container">
+<div class="highlight"><pre><span class="nt">&lt;style&gt;</span>
+    <span class="nc">.css-unico-deste-input</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;form&gt;</span>
+    <span class="cp">{{</span> <span class="nv">form.as_p</span> <span class="cp">}}</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+</div>
+<p class="small gray"><tt class="docutils literal">forms.py</tt></p>
+<div class="tiny container">
+<div class="highlight"><pre><span class="k">class</span> <span class="nc">Tweet</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Form</span><span class="p">):</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">widget</span><span class="o">=</span><span class="n">forms</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;css-unico-deste-input&#39;</span><span class="p">}))</span>
+</pre></div>
+</div>
+<p class="small gray"><tt class="docutils literal">output</tt></p>
+<div class="tiny container">
+<div class="highlight"><pre><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;id_msg&quot;</span><span class="nt">&gt;</span>Msg:<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;id_msg&quot;</span> <span class="na">name=</span><span class="s">&quot;msg&quot;</span> <span class="na">class=</span><span class="s">&quot;css-unico-deste-input&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="id7">
+<h1>Desacople o estilo do Form</h1>
+<p class="small gray"><tt class="docutils literal">template.html</tt></p>
+<div class="tiny container">
+<div class="highlight"><pre><span class="nt">&lt;style&gt;</span>
+    <span class="nc">.css-unico-deste-input</span> <span class="nt">input</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;form&gt;</span>
+    <span class="cp">{{</span> <span class="nv">form.non_field_errors</span> <span class="cp">}}</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;css-unico-deste-input&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">form.msg.id_for_label</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="nt">&gt;</span><span class="cp">{{</span> <span class="nv">form.msg.label</span> <span class="cp">}}</span>:<span class="nt">&lt;/label&gt;</span>
+        <span class="cp">{{</span> <span class="nv">form.msg</span> <span class="cp">}}</span>
+        <span class="cp">{{</span> <span class="nv">form.msg.errors</span> <span class="cp">}}</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+</div>
+<p class="small gray"><tt class="docutils literal">forms.py</tt></p>
+<div class="tiny container">
+<div class="highlight"><pre><span class="k">class</span> <span class="nc">Tweet</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Form</span><span class="p">):</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="small gray"><tt class="docutils literal">output</tt></p>
+<div class="tiny container">
+<div class="highlight"><pre><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;css-unico-deste-input&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;id_msg&quot;</span><span class="nt">&gt;</span>Msg:<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;id_msg&quot;</span> <span class="na">name=</span><span class="s">&quot;msg&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="cuidado-com-o-modelform">
+<h1>Cuidado com o ModelForm</h1>
+<div class="highlight"><pre><span class="c"># models.py</span>
+<span class="k">class</span> <span class="nc">Matricula</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">nome</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+    <span class="n">cpf</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+</pre></div>
+<div class="highlight"><pre><span class="c"># forms.py</span>
+<span class="k">class</span> <span class="nc">MatriculaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Matricula</span>
+</pre></div>
+</div>
+<div class="slide" id="id8">
+<h1>Cuidado com o ModelForm</h1>
+<div class="highlight"><pre><span class="c"># models.py</span>
+<span class="k">class</span> <span class="nc">Matricula</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">nome</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+    <span class="n">cpf</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+    <span class="n">pago</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">()</span>
+</pre></div>
+<div class="highlight"><pre><span class="c"># forms.py</span>
+<span class="k">class</span> <span class="nc">MatriculaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Matricula</span>
+</pre></div>
+</div>
+<div class="slide" id="id9">
+<h1>Cuidado com o ModelForm</h1>
+<div class="highlight"><pre><span class="c"># models.py</span>
+<span class="k">class</span> <span class="nc">Matricula</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">nome</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+    <span class="n">cpf</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+    <span class="n">pago</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">()</span>
+</pre></div>
+<div class="highlight"><pre><span class="c"># forms.py</span>
+<span class="k">class</span> <span class="nc">MatriculaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Matricula</span>
+        <span class="n">exclude</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;pago&#39;</span><span class="p">,)</span>
+</pre></div>
+</div>
+<div class="slide" id="id10">
+<h1>Cuidado com o ModelForm</h1>
+<div class="highlight"><pre><span class="c"># models.py</span>
+<span class="k">class</span> <span class="nc">Matricula</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">nome</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+    <span class="n">cpf</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+    <span class="n">pago</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">()</span>
+</pre></div>
+<div class="highlight"><pre><span class="c"># forms.py</span>
+<span class="k">class</span> <span class="nc">MatriculaForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Matricula</span>
+        <span class="n">fields</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;nome&#39;</span><span class="p">,</span> <span class="s">&#39;cpf&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="slide" id="testes">
+<h1>Testes</h1>
+<ul class="simple">
+<li>Organize seus testes em packages.</li>
+<li>Use uma asserção por método de teste.</li>
+<li>Não se limite ao que o <tt class="docutils literal">unittest</tt> e o <tt class="docutils literal">Django</tt> oferecem.</li>
+<li>Implemente as suas asserções.</li>
+</ul>
+</div>
+<div class="slide" id="testcases-cenarios-de-testes">
+<h1><tt class="docutils literal">TestCases</tt> = Cenários de Testes</h1>
+<ul class="simple">
+<li>Não se engane com a conta de 1 TestCase por <tt class="docutils literal">classe</tt>;</li>
+<li>Use um TestCase para cada contexto;</li>
+<li>Não herde um TestCase de outro criando mágicas;</li>
+<li>Mas quando um <tt class="docutils literal">setUp</tt> grande se repetir, reaproveite.</li>
+</ul>
+</div>
+<div class="slide" id="use-o-django-nose-com-rednose">
+<h1>Use o django-nose com rednose</h1>
+<ul class="simple">
+<li>pip install django-nose rednose</li>
+</ul>
+<div class="small container">
+<div class="highlight"><pre><span class="c"># settings.py</span>
+
+<span class="n">TEST_RUNNER</span> <span class="o">=</span> <span class="s">&#39;django_nose.NoseTestSuiteRunner&#39;</span>
+<span class="n">NOSE_ARGS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s">&#39;--match=^(must|ensure|should|test|it_should)&#39;</span><span class="p">,</span>
+    <span class="s">&#39;--where=</span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="n">PROJECT_DIR</span><span class="p">,</span>
+    <span class="s">&#39;--id-file=</span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="n">PROJECT_DIR</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="s">&#39;.noseids&#39;</span><span class="p">),</span>
+    <span class="s">&#39;--all-modules&#39;</span><span class="p">,</span>
+    <span class="s">&#39;--with-id&#39;</span><span class="p">,</span>
+    <span class="s">&#39;--verbosity=2&#39;</span><span class="p">,</span>
+    <span class="s">&#39;--nologcapture&#39;</span><span class="p">,</span>
+    <span class="s">&#39;--rednose&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="verifique-a-estrutura-do-seu-html">
+<h1>Verifique a estrutura do seu Html</h1>
+<div class="center huge container">
+<img alt="assets/form.png" src="assets/form.png" />
+</div>
+</div>
+<div class="slide" id="id11">
+<h1>Verifique a estrutura do seu Html</h1>
+<div class="small container">
+<div class="highlight"><pre><span class="k">class</span> <span class="nc">SubscribeTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">resp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">r</span><span class="p">(</span><span class="s">&#39;subscriptions:subscribe&#39;</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">test_html</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s">&#39;Html must contain input controls.&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertContains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">resp</span><span class="p">,</span> <span class="s">&#39;&lt;form&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertContains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">resp</span><span class="p">,</span> <span class="s">&#39;&lt;input&#39;</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertContains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">resp</span><span class="p">,</span> <span class="s">&#39;type=&quot;text&quot;&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertContains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">resp</span><span class="p">,</span> <span class="s">&#39;type=&quot;submit&quot;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="mommy-make-it">
+<h1>Mommy make it!</h1>
+<ul class="simple">
+<li>Fixtures como initial data é ok.</li>
+<li>Fixtures montar um cenário de testes é ruim.</li>
+<li><a class="reference external" href="https://github.com/vandersonmota/model_mommy">ModelMommy</a> do <a class="reference external" href="https://github.com/vandersonmota">Argentino</a> #ftw</li>
+</ul>
+<div class="small container">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.test</span> <span class="kn">import</span> <span class="n">TestCase</span>
+<span class="kn">from</span> <span class="nn">model_mommy</span> <span class="kn">import</span> <span class="n">mommy</span>
+<span class="kn">from</span> <span class="nn">project.app.models</span> <span class="kn">import</span> <span class="n">Kid</span>
+
+<span class="k">class</span> <span class="nc">MyTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">kid</span> <span class="o">=</span> <span class="n">mommy</span><span class="o">.</span><span class="n">make_one</span><span class="p">(</span><span class="n">Kid</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="teste-de-plugable-apps">
+<h1>Teste de Plugable Apps</h1>
+<div class="tiny container">
+<div class="highlight"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># runtests.py</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">django.conf</span> <span class="kn">import</span> <span class="n">settings</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">settings</span><span class="o">.</span><span class="n">configured</span><span class="p">:</span>
+    <span class="n">settings</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span>
+        <span class="n">DATABASES</span><span class="o">=</span><span class="p">{</span>
+            <span class="s">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s">&#39;ENGINE&#39;</span><span class="p">:</span> <span class="s">&#39;django.db.backends.sqlite3&#39;</span><span class="p">,</span>
+                <span class="s">&#39;NAME&#39;</span><span class="p">:</span> <span class="s">&#39;:memory:&#39;</span><span class="p">,</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="n">INSTALLED_APPS</span><span class="o">=</span><span class="p">(</span>
+            <span class="s">&#39;something&#39;</span><span class="p">,</span> <span class="c"># Don&#39;t forget dependencies</span>
+        <span class="p">),</span>
+        <span class="n">SECRET_KEY</span><span class="o">=</span><span class="s">&#39;something-secret&#39;</span><span class="p">,</span>
+        <span class="n">SITE_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">ROOT_URLCONF</span><span class="o">=</span><span class="s">&#39;something.tests.urls&#39;</span><span class="p">,</span> <span class="c"># If needed</span>
+    <span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">django.test.utils</span> <span class="kn">import</span> <span class="n">get_runner</span>
+
+<span class="k">def</span> <span class="nf">runtests</span><span class="p">():</span>
+    <span class="n">TestRunner</span> <span class="o">=</span> <span class="n">get_runner</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+    <span class="n">test_runner</span> <span class="o">=</span> <span class="n">TestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">interactive</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">failfast</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">test_runner</span><span class="o">.</span><span class="n">run_tests</span><span class="p">([</span><span class="s">&#39;something&#39;</span><span class="p">,</span> <span class="p">]))</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">runtests</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="slide" id="obrigado">
+<h1>Obrigado</h1>
+<ul class="simple">
+<li><a class="reference external" href="http://twitter.com/henriquebastos">&#64;henriquebastos</a></li>
+<li><a class="reference external" href="mailto:henrique&#64;bastos.net">henrique&#64;bastos.net</a></li>
+<li><a class="reference external" href="http://henriquebastos.net">http://henriquebastos.net</a></li>
+<li><a class="reference external" href="http://welcometothedjango.com.br">http://welcometothedjango.com.br</a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>
