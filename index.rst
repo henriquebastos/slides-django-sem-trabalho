@@ -49,7 +49,7 @@ O setup influencia tudo
 
 * Comporte-se como um Chef de cozinha.
 * Live Software: Código bom é codigo rodando.
-* Top-Down: template primeiro, modelo depois.
+* Top-Down: template primeiro, modelo por último.
 
 
 .. include:: setup.rst
